@@ -38,7 +38,7 @@ This is currently the state-of-the-art method trained on the **MSMT17** dataset.
 - **Loss function**: comprises of a cross-entropy loss, a hard mining triplet loss, and orthogonal constraints on feature (**O.F**) and on weights (**O.W**) penalty: 
 
 <p align="center">
-  <img src="https://github.com/soloSquad1999/Person-ReID-paper-notes/blob/master/Network%20Approach/ABD-Net/loss.png" />
+  <img src="https://github.com/soloSquad1999/Person-ReID-paper-notes/blob/master/Network%20Approach/ABD-Net/loss_center.png" />
 </p>
 
 ## Experiment Results
