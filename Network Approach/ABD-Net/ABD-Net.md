@@ -29,7 +29,7 @@ This is currently the state-of-the-art method trained on the **MSMT17** dataset.
 
 
 ### Network Architecture
-- **ABD-Net** is compatible with most common feature extraction backbones, such as ResNet, InceptionNet, and DenseNet. Here, the authors use the ResNet network since it is the most common one used in the problem Person-Reid.
+- **ABD-Net** is compatible with most common feature extraction backbones, such as **ResNet, InceptionNet, and DenseNet**. Here, the authors use the ResNet network since it is the most common one used in the problem Person-Reid.
 
 <p align="center">
   <img src="https://github.com/soloSquad1999/Person-ReID-paper-notes/blob/master/Network%20Approach/ABD-Net/network_architecture.png" />
