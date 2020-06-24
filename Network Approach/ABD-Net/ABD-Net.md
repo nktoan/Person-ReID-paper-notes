@@ -27,6 +27,9 @@ This is currently the state-of-the-art method trained on the **MSMT17** dataset.
 ### Diversity through Orthogonality Regularization
 - The authors carry out the diversity via orthogonality, then obtain a novel orthogonality regularizer term. It is applied to both hidden features and weights, of both convolutional and fully connected layers. Orthogonality regularizer on feature space (**O.F**) is to reduce feature correlations. Orthogonality regularizer on weight (**O.W**) encourages filter diversity, thereby enhances the learning capacity.
 
+<p align="center">
+  <img src="https://github.com/soloSquad1999/Person-ReID-paper-notes/blob/master/Network%20Approach/ABD-Net/reshape.png" />
+</p>
 
 ### Network Architecture
 - **ABD-Net** is compatible with most common feature extraction backbones, such as **ResNet, InceptionNet, and DenseNet**. Here, the authors use the **ResNet** network since it is the most common one used in the problem Person-Reid.
