@@ -32,8 +32,7 @@ This is currently the state-of-the-art method trained on the **MSMT17** dataset.
 - **ABD-Net** is compatible with most common feature extraction backbones, such as ResNet, InceptionNet, and DenseNet. Here, the authors use the ResNet network since it is the most common one in the problem Person-Reid.
 
 
-### Loss function
-- Comprises of a cross-entropy loss, a hard mining triplet loss, and orthogonal constraints on feature (**O.F**) and on weights (**O.W**) penalty: 
+- **Loss function**: comprises of a cross-entropy loss, a hard mining triplet loss, and orthogonal constraints on feature (**O.F**) and on weights (**O.W**) penalty: 
 
 ## Experiment Results
 - On **DukeMTMC-Reid**, ABD-Net obtains *78.59% mAP*, whereas it achieves *88.28% mAP* on **Market-1501**. Especially, on **MSMT17**, it obtains *60.8% mAP*, which is currently the top-1 accuracy. 
