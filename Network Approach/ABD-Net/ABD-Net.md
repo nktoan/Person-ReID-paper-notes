@@ -43,4 +43,3 @@ This is currently the state-of-the-art method trained on the **MSMT17** dataset.
 
 ## Experiment Results
 - On **DukeMTMC-Reid**, ABD-Net obtains *78.59% mAP*, whereas it achieves *88.28% mAP* on **Market-1501**. Especially, on **MSMT17**, it obtains *60.8% mAP*, which is currently the top-1 accuracy. 
-
