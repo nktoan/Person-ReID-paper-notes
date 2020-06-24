@@ -6,3 +6,5 @@
 ##
 
 ## GAN approach
+[2] **Joint Discriminative and Generative Learning for Person Re-identification** (CVPR 2019), Zhedong Zheng, Xiaodong Yang, Zhiding Yu, Liang Zheng, Yi Yang, Jan Kautz.
+[[[[NOTES]()] [[PAPER](https://arxiv.org/pdf/1904.07223.pdf)]
