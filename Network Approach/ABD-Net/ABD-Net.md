@@ -1,13 +1,13 @@
 # ABD-Net
 ## Introduction
-This is currently the state-of-the-art method trained on the MSMT17 dataset. One of the most important things about this method is that they incorporate both **'attentive'** and **'diverse'** mechanisms on the feature embedding for the problem person Re-ID. Particularly, while the **'attentive'** mechanism aims to correct misalignment, eliminate background perturbance, and focus on discriminative local parts of body appearances, the **'diverse'** one aims to encourage lower correlation between features which be claimed to boost the matching performance, thereby potentially make feature space more comprehensive. The authors propose **Attention but Diverse Network (ABD-Net)**, the main contributions of ABD-Net are listed below:
+This is currently the state-of-the-art method trained on the **MSMT17** dataset. One of the most important things about this method is that they incorporate both **'attentive'** and **'diverse'** mechanisms on the feature embedding for the problem person Re-ID. Particularly, while the **'attentive'** mechanism aims to correct misalignment, eliminate background perturbance, and focus on discriminative local parts of body appearances, the **'diverse'** one aims to encourage lower correlation between features which be claimed to boost the matching performance, thereby potentially make feature space more comprehensive. The authors propose **Attention but Diverse Network (ABD-Net)**, the main contributions of ABD-Net are listed below:
 - **Attention mechanisms**: comprises of Channel Attention Module (**CAM**) and Position Attention Module (**PAM**). CAM supports channel-wise, feature-level information aggregation, whereas PAM captures the spatial awareness of body and part positions by mainly capture the discriminative appearances of certain body parts.
 - **Spectral value difference orthogonality (SVDO)**: manipulate the condition number of the weight Gram matrix as applied to both activations and weights, which leads to reduce learned feature correlations.
 ## Details
 ### Attention though Channel-Wise and Position-Wise
 - Aim to focus on person-related features and eliminating irrelevant backgrounds.
 - **Channel Attention Module (CAM)**: The main purpose of designing CAM is to group and to aggregate semantically similar channels that are obtained from a trained CNN classifier. 
-!(https://github.com/soloSquad1999/Person-ReID-paper-notes/blob/master/Network%20Approach/ABD-Net/cam_detail.png)
+![cam_detail](https://github.com/soloSquad1999/Person-ReID-paper-notes/blob/master/Network%20Approach/ABD-Net/cam_detail.png)
 
 	
 
