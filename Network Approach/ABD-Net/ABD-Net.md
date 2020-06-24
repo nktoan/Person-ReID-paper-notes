@@ -17,6 +17,12 @@ This is currently the state-of-the-art method trained on the **MSMT17** dataset.
 
 - **Position Attention Module (PAM)**: The main purpose of designing PAM to capture and aggregate semantically related pixels in the spatial domain. 
 
+<p align="center">
+  <img src="https://github.com/soloSquad1999/Person-ReID-paper-notes/blob/master/Network%20Approach/ABD-Net/pam_image.png" />
+</p>
+<p align="center">
+  <img src="https://github.com/soloSquad1999/Person-ReID-paper-notes/blob/master/Network%20Approach/ABD-Net/pam_detail.png" />
+</p>
 
 ### Diversity through Orthogonality Regularization
 - The authors carry out the diversity via orthogonality, then obtain a novel orthogonality regularizer term. It is applied to both hidden features and weights, of both convolutional and fully connected layers. Orthogonality regularizer on feature space (**O.F**) is to reduce feature correlations. Orthogonality regularizer on weight (**O.W**) encourages filter diversity, thereby enhances the learning capacity.
@@ -30,5 +36,5 @@ This is currently the state-of-the-art method trained on the **MSMT17** dataset.
 - Comprises of a cross-entropy loss, a hard mining triplet loss, and orthogonal constraints on feature (**O.F**) and on weights (**O.W**) penalty: 
 
 ## Experiment Results
-- On **DukeMTMC-Reid**, ABD-Net obtains 78.59% mAP, whereas it achieves 88.28% mAP on Market-1501. Especially, on **MSMT17**, it obtains 60.8% mAP, which is currently the top-1 accuracy. 
+- On **DukeMTMC-Reid**, ABD-Net obtains *78.59% mAP*, whereas it achieves *88.28% mAP* on **Market-1501**. Especially, on **MSMT17**, it obtains *60.8% mAP*, which is currently the top-1 accuracy. 
 
