@@ -6,7 +6,7 @@ This is currently the state-of-the-art method trained on the **MSMT17** dataset.
 ## Details
 ### Attention though Channel-Wise and Position-Wise
 - Aim to focus on person-related features and eliminating irrelevant backgrounds.
-- **Channel Attention Module (CAM)**: The main purpose of designing CAM is to group and to aggregate semantically similar channels that are obtained from a trained CNN classifier. 
+- **Channel Attention Module (CAM)**: The main purpose of designing CAM is to group and to aggregate semantically similar channels that are obtained from a trained **CNN** classifier. 
 
 <p align="center">
   <img src="https://github.com/soloSquad1999/Person-ReID-paper-notes/blob/master/Network%20Approach/ABD-Net/cam_image.png" />
@@ -27,6 +27,12 @@ This is currently the state-of-the-art method trained on the **MSMT17** dataset.
 ### Diversity through Orthogonality Regularization
 - The authors carry out the diversity via orthogonality, then obtain a novel orthogonality regularizer term. It is applied to both hidden features and weights, of both convolutional and fully connected layers. Orthogonality regularizer on feature space (**O.F**) is to reduce feature correlations. Orthogonality regularizer on weight (**O.W**) encourages filter diversity, thereby enhances the learning capacity.
 
+<p align="center">
+  <img src="https://github.com/soloSquad1999/Person-ReID-paper-notes/blob/master/Network%20Approach/ABD-Net/reshape.png" />
+</p>
+
+- The problem with many orthogonality methods is the **SVD** computing costs are expensive, urging for soft orthogonality regularizers. Many existing regularizers restrict the **Gram matrix** of **F** to be close to an identity matrix under Frobenius norm that can avoid the **SVD** step while being differentiable, but this method cause regularizers biased due to rank deficiency.
+- The authors propose a new option to enforce the orthogonality via directly regularizing the conditional number of \textbf{F}\textbf{F}$^\textbf{T}$:
 
 ### Network Architecture
 - **ABD-Net** is compatible with most common feature extraction backbones, such as **ResNet, InceptionNet, and DenseNet**. Here, the authors use the **ResNet** network since it is the most common one used in the problem Person-Reid.
