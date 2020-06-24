@@ -8,7 +8,9 @@ This is currently the state-of-the-art method trained on the **MSMT17** dataset.
 - Aim to focus on person-related features and eliminating irrelevant backgrounds.
 - **Channel Attention Module (CAM)**: The main purpose of designing CAM is to group and to aggregate semantically similar channels that are obtained from a trained CNN classifier. 
 
-:![cam_image](https://github.com/soloSquad1999/Person-ReID-paper-notes/blob/master/Network%20Approach/ABD-Net/cam_image.png):
+<p align="center">
+  <img ![cam_image](https://github.com/soloSquad1999/Person-ReID-paper-notes/blob/master/Network%20Approach/ABD-Net/cam_image.png)/>
+</p>
 :![cam_detail](https://github.com/soloSquad1999/Person-ReID-paper-notes/blob/master/Network%20Approach/ABD-Net/cam_detail.png):
 
 - **Position Attention Module (PAM)**: The main purpose of designing PAM to capture and aggregate semantically related pixels in the spatial domain. 
