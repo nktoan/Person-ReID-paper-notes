@@ -7,7 +7,7 @@ This is currently the state-of-the-art method trained on the MSMT17 dataset. One
 ### Attention though Channel-Wise and Position-Wise
 - Aim to focus on person-related features and eliminating irrelevant backgrounds.
 - **Channel Attention Module (CAM)**: The main purpose of designing CAM is to group and to aggregate semantically similar channels that are obtained from a trained CNN classifier. 
-
+!(https://github.com/soloSquad1999/Person-ReID-paper-notes/blob/master/Network%20Approach/ABD-Net/cam_detail.png)
 
 	
 
