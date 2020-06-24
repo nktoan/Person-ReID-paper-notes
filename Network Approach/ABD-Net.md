@@ -25,6 +25,6 @@ This is the state-of-the-art method training on the MSMT17 dataset. One of the m
 ### Loss function L
 - comprises of a cross-entropy loss, a hard mining triplet loss, and orthogonal constraints on feature (O.F.) and on weights (O.W.) penalty: 
 
-## Experiments Results
+## Experiment Results
 - On **DukeMTMC-Reid**, ABD-Net obtains 78.59% mAP, whereas it achieves 88.28% mAP on Market-1501. Especially, on **MSMT17**, it obtains 60.8% mAP, which is currently the top-1 accuracy. 
 
