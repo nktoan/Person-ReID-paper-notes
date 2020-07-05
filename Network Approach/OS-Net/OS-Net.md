@@ -7,11 +7,11 @@ The authors propose **OS-Net**, a novel CNN architecture designed for learning o
 Besides, the authors aim to construct a *lightweight* network. Instead of sending the raw videos to
 a central server, only the extracted features need to be sent. Therefore, small re-ID networks are preferred. In order to do this, in their building block, they factorize convolutions with pointwise and depthwise convolutions.
 ## Related Work
-
+.....
 ## Omni-Scale Feature Learning
 ### Depthwise Separable Convolutions
-- Aim to focus on person-related features and eliminating irrelevant backgrounds.
-- **Channel Attention Module (CAM)**: The main purpose of designing CAM is to group and to aggregate semantically similar channels that are obtained from a trained **CNN** classifier. 
+- Aim to reduce the number of parameters.
+- The idea is to divide a convolution layer ReLU into two seperable layers ReLU with depthwise kernel u and pointwise kernel v.
 
 <p align="center">
   <img src="https://github.com/soloSquad1999/Person-ReID-paper-notes/blob/master/Network%20Approach/ABD-Net/cam_image.png" />
@@ -20,17 +20,15 @@ a central server, only the extracted features need to be sent. Therefore, small 
   <img src="https://github.com/soloSquad1999/Person-ReID-paper-notes/blob/master/Network%20Approach/ABD-Net/cam_detail.png" />
 </p>
 
-- **Position Attention Module (PAM)**: The main purpose of designing PAM to capture and aggregate semantically related pixels in the spatial domain. 
+### Omni-Scale Residual Block
+- 
 
-<p align="center">
-  <img src="https://github.com/soloSquad1999/Person-ReID-paper-notes/blob/master/Network%20Approach/ABD-Net/pam_image.png" />
-</p>
-<p align="center">
-  <img src="https://github.com/soloSquad1999/Person-ReID-paper-notes/blob/master/Network%20Approach/ABD-Net/pam_detail.png" />
-</p>
+#### Multi-scale feature learning
 
-### Diversity through Orthogonality Regularization
-- The authors carry out the diversity via orthogonality, then obtain a novel orthogonality regularizer term. It is applied to both hidden features and weights, of both convolutional and fully connected layers. Orthogonality regularizer on feature space (**O.F**) is to reduce feature correlations. Orthogonality regularizer on weight (**O.W**) encourages filter diversity, thereby enhances the learning capacity.
+#### Unified aggregation gate
+
+
+### Network Architecture.
 
 <p align="center">
   <img src="https://github.com/soloSquad1999/Person-ReID-paper-notes/blob/master/Network%20Approach/ABD-Net/reshape.png" />
