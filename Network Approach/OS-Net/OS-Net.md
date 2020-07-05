@@ -1,7 +1,9 @@
 # OS-Net
 ## Introduction
 Since person re-identification is regarded as an instance-level recognition problem, it faces with two primary challenges: the **intra-class (instance/identity) variations** due to the changes of camera viewing conditions, and the **small inter-class variations** such as people in public space often wear similar clothes. To combat against these challenge, the model have to learn **discriminative features**. The authors argued such features need to be of *omni-scales*, defined as the combination of variable homogeneous scales and heterogeneous scales, each of which is composed of a mixture of multiple scales.
+
 The authors propose **OS-Net**, a novel CNN architecture designed for learning omni-scale feature representations. In their method, they construct building block consists of multiple convolutional streams with different receptive field sizes. The feature scale that each stream extracts determined by *exponent* (a dimension factor that is linearly increased across streams to ensure that various scales are captured in each block). In addition, the authors use a unified aggregation gate (**AG**) to dynamically combine the resulting multi-scale feature maps. It is a mini-network sharing parameters across all streams, by training AG, the generated channel-wise weights become input-dependent, hence the dynamic scale fusion. 
+
 Besides, the authors aim to construct a *lightweight* network. Instead of sending the raw videos to
 a central server, only the extracted features need to be sent. Therefore, small re-ID networks are preferred. In order to do this, in their building block, they factorize convolutions with pointwise and depthwise convolutions.
 ## Related Work
